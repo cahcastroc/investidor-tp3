@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Perfil_Investidor_tp3</string>
+    <string name="logo">Logo</string>
+    <string name="o_objetivo_deste_aplicativo_identifificar_o_seu_perfil_de_investidor_de_acordo_com_o_question_rio_do_banco_paulista_atrav_s_das_suas_respostas_ser_poss_vel_realizar_uma_an_lise_para_verificar_se_o_seu_perfil_conservador_moderado_ou_arrojado_para_investimentos">O objetivo deste aplicativo é identifificar o seu perfil de investidor de acordo com o questionário do Banco Paulista. Através das suas respostas será possível realizar uma análise para verificar se o seu perfil é conservador, moderado ou arrojado para investimentos.</string>
+    <string name="come_ar">Começar</string>
+    <string name="nome">Nome</string>
+</resources>

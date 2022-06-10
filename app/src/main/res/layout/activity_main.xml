@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2d60"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomoney" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:drawable/divider_horizontal_dark"
+        android:backgroundTint="#3EFFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/o_objetivo_deste_aplicativo_identifificar_o_seu_perfil_de_investidor_de_acordo_com_o_question_rio_do_banco_paulista_atrav_s_das_suas_respostas_ser_poss_vel_realizar_uma_an_lise_para_verificar_se_o_seu_perfil_conservador_moderado_ou_arrojado_para_investimentos"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#B8BCD5"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/retangulo"
+        android:backgroundTint="#D2FFFFFF"
+        android:drawableStart="@drawable/iconname"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:paddingStart="10dp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColorHint="#59232121"
+        android:textDirection="inherit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#424173"
+        android:text="@string/come_ar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
