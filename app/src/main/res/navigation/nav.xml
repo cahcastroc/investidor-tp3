@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/questionOne">
+
+    <fragment
+        android:id="@+id/questionOne"
+        android:name="me.camila.perfil_investidor_tp3.QuestionOne"
+        android:label="fragment_question_one"
+        tools:layout="@layout/fragment_question_one" >
+        <action
+            android:id="@+id/action_questionOne_to_questionTwo"
+            app:destination="@id/questionTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionTwo"
+        android:name="me.camila.perfil_investidor_tp3.QuestionTwo"
+        android:label="fragment_question_two"
+        tools:layout="@layout/fragment_question_two" >
+        <action
+            android:id="@+id/action_questionTwo_to_questionThree"
+            app:destination="@id/questionThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionThree"
+        android:name="me.camila.perfil_investidor_tp3.QuestionThree"
+        android:label="fragment_question_three"
+        tools:layout="@layout/fragment_question_three" >
+        <action
+            android:id="@+id/action_questionThree_to_questionFour"
+            app:destination="@id/questionFour" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFour"
+        android:name="me.camila.perfil_investidor_tp3.QuestionFour"
+        android:label="fragment_question_four"
+        tools:layout="@layout/fragment_question_four" >
+        <action
+            android:id="@+id/action_questionFour_to_questionFive"
+            app:destination="@id/questionFive" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFive"
+        android:name="me.camila.perfil_investidor_tp3.QuestionFive"
+        android:label="fragment_question_five"
+        tools:layout="@layout/fragment_question_five" >
+        <action
+            android:id="@+id/action_questionFive_to_questionSix"
+            app:destination="@id/questionSix" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionSix"
+        android:name="me.camila.perfil_investidor_tp3.QuestionSix"
+        android:label="fragment_question_six"
+        tools:layout="@layout/fragment_question_six" >
+        <action
+            android:id="@+id/action_questionSix_to_questionSeven"
+            app:destination="@id/questionSeven" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionSeven"
+        android:name="me.camila.perfil_investidor_tp3.QuestionSeven"
+        android:label="fragment_question_seven"
+        tools:layout="@layout/fragment_question_seven" >
+        <action
+            android:id="@+id/action_questionSeven_to_questionEight"
+            app:destination="@id/questionEight" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionEight"
+        android:name="me.camila.perfil_investidor_tp3.QuestionEight"
+        android:label="fragment_question_eight"
+        tools:layout="@layout/fragment_question_eight" >
+        <action
+            android:id="@+id/action_questionEight_to_questionNine"
+            app:destination="@id/questionNine" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionNine"
+        android:name="me.camila.perfil_investidor_tp3.QuestionNine"
+        android:label="fragment_question_nine"
+        tools:layout="@layout/fragment_question_nine" />
+</navigation>

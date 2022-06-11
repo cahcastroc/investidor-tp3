@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2d60"
+    android:padding="0dp"
+    tools:context=".QuestionEight">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/_8_qual_sua_faixa_de_renda_mensal_m_dia"
+        android:textColor="#E6DADA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/at_r_1_000"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/de_r_1_001_at_r_5_000"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/de_r_5_001_at_r_10_000"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acima_de_r_10_000"
+            android:textColor="#E6DADA" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSend8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

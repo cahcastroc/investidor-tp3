@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2d60"
+    android:padding="0dp"
+    tools:context=".QuestionSeven">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/_7_em_rela_o_as_aplica_es_e_rendimentos_em_qual_dessas_situa_es_voc_se_enquadra"
+        android:textColor="#E6DADA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conto_com_o_rendimento_dessas_aplica_es_para_complementar_minha_renda_mensal"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventualmente_posso_resgatar_parte_das_aplica_es_para_fazer_frente_aos_meus_gastos_contudo_n_o_tenho_inten_o_de_resgatar_no_curto_prazo_e_pretendo_fazer_aplica_es_regulares"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n_o_tenho_inten_o_de_resgatar_no_curto_prazo_mas_n_o_pretendo_realizar_novas_aplica_es"
+            android:textColor="#E6DADA" />
+
+        <RadioButton
+            android:id="@+id/rbOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/n_o_tenho_inten_o_de_resgatar_no_curto_prazo_e_ainda_pretendo_fazer_aplica_es_regulares"
+            android:textColor="#E6DADA" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSend7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
