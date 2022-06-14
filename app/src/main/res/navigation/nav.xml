@@ -22,6 +22,7 @@
         <action
             android:id="@+id/action_questionTwo_to_questionThree"
             app:destination="@id/questionThree" />
+
     </fragment>
     <fragment
         android:id="@+id/questionThree"
@@ -81,5 +82,14 @@
         android:id="@+id/questionNine"
         android:name="me.camila.perfil_investidor_tp3.QuestionNine"
         android:label="fragment_question_nine"
-        tools:layout="@layout/fragment_question_nine" />
+        tools:layout="@layout/fragment_question_nine" >
+        <action
+            android:id="@+id/action_questionNine_to_resultActivity"
+            app:destination="@id/resultActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/resultActivity"
+        android:name="me.camila.perfil_investidor_tp3.ResultActivity"
+        android:label="activity_result"
+        tools:layout="@layout/activity_result" />
 </navigation>

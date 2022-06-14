@@ -17,14 +17,14 @@ class MainActivity : AppCompatActivity() {
         val btStart = this.findViewById<Button>(R.id.btStart)
 
         btStart.setOnClickListener {
-            val intentResult = Intent(this,ResultActivity::class.java)
+
             val intentQuestions = Intent(this,QuestionsActivity::class.java)
 
             if(validated(etName)){
-                intentResult.putExtra("Name", etName.text.toString())
+                intentQuestions.putExtra("Name", etName.text.toString())
                 startActivity(intentQuestions)
             }else{
-                Toast.makeText(this,"Insira o seu nome no campo indicado",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Insira o seu nome no campo indicado",Toast.LENGTH_SHORT).show()
             }
         }
 

@@ -55,10 +55,14 @@
     <string name="de_r_1_001_at_r_5_000">De R$ 1.001 até R$ 5.000</string>
     <string name="de_r_5_001_at_r_10_000">De R$ 5.001 até R$ 10.000</string>
     <string name="acima_de_r_10_000">Acima de R$ 10.000</string>
-    <string name="_11_qual_o_valor_aproximado_do_seu_patrim_nio">11. Qual o valor aproximado do seu patrimônio?</string>
+    <string name="_9_qual_o_valor_aproximado_do_seu_patrim_nio">9. Qual o valor aproximado do seu patrimônio?</string>
     <string name="at_r_10_000">Até R$ 10.000</string>
     <string name="de_r_10_001_at_r_100_000">De R$ 10.001 até R$ 100.000</string>
     <string name="de_r_100_001_at_r_500_000">De R$ 100.001 até R$ 500.000</string>
     <string name="de_r_500_001_at_r_1_000_000">De R$ 500.001 até R$ 1.000.000</string>
     <string name="acima_de_r_1_000_001">Acima de R$ 1.000.001</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="pr_xima">Próxima</string>
+    <string name="cr_dito_https_www_bancopaulista_com_br_arquivos_questionarioapi_pdf">Crédito: https://www.bancopaulista.com.br/Arquivos/QuestionarioAPI.pdf</string>
+    <string name="imagem_de_smartphone_com_telas_financeiras">Imagem de Smartphone com Telas Financeiras</string>
 </resources>

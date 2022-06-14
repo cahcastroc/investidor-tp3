@@ -9,60 +9,58 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 
 
-
 class QuestionOne : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-
-        val view = inflater.inflate(R.layout.fragment_question_one, container, false)
-
-        val btSend = view.findViewById<Button>(R.id.btSend1)
         var score = 0
 
-
-        //------------------ RadioButtons
-        val rbOptionA = view.findViewById<RadioButton>(R.id.rbOptionA)
-        val rbOptionB = view.findViewById<RadioButton>(R.id.rbOptionB)
-        val rbOptionC = view.findViewById<RadioButton>(R.id.rbOptionC)
-        val rbOptionD = view.findViewById<RadioButton>(R.id.rbOptionD)
+        val view = inflater.inflate(R.layout.fragment_question_one, container, false)
+        val btSend = view.findViewById<Button>(R.id.btSend1)
         val radioGroup = view.findViewById<RadioGroup>(R.id.radioGroup)
 
+        var check = false
 
 
-        radioGroup.setOnCheckedChangeListener { radioGroup, id ->
+        radioGroup.setOnCheckedChangeListener { _, id ->
+            val rbOptionA = view.findViewById<RadioButton>(R.id.rbOptionA)
+            val rbOptionB = view.findViewById<RadioButton>(R.id.rbOptionB)
+            val rbOptionC = view.findViewById<RadioButton>(R.id.rbOptionC)
+            val rbOptionD = view.findViewById<RadioButton>(R.id.rbOptionD)
+
             when (id) {
-                rbOptionA?.id -> score =+ 1
-                rbOptionB?.id -> score =+ 2
-                rbOptionC?.id -> score =+ 3
-                rbOptionD?.id -> score =+ 5
+                rbOptionA?.id -> score = score.plus(0)
+                rbOptionB?.id -> score = score.plus(2)
+                rbOptionC?.id -> score = score.plus(3)
+                rbOptionD?.id -> score = score.plus(4)
             }
+            check = true
         }
 
 
         btSend.setOnClickListener {
-            val navController = this.findNavController()
-//            val bundle = Bundle()
-//            bundle.putInt("score",score)
 
-            Toast.makeText(activity,"Pontuação: $score",Toast.LENGTH_LONG).show()
-            navController.navigate(R.id.action_questionOne_to_questionTwo)
+            if (check) {
 
+                val navController = this.findNavController()
 
-            //----------
+                val bundle = bundleOf("score" to score)
 
+                navController.navigate(R.id.action_questionOne_to_questionTwo, bundle)
+
+            } else {
+
+                Toast.makeText(activity, "Selecione uma opção", Toast.LENGTH_LONG).show()
+            }
         }
-
         return view
-
-
     }
-
-
 }

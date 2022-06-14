@@ -40,7 +40,7 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#B8BCD5"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
 
     </LinearLayout>
@@ -60,6 +60,7 @@
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
         android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textColorHint="#59232121"
@@ -73,11 +74,24 @@
         android:id="@+id/btStart"
         android:layout_width="361dp"
         android:layout_height="71dp"
-        android:layout_marginTop="24dp"
         android:backgroundTint="#424173"
         android:text="@string/come_ar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/cr_dito_https_www_bancopaulista_com_br_arquivos_questionarioapi_pdf"
+        android:textAlignment="center"
+        android:textColor="#97FBFBFB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />

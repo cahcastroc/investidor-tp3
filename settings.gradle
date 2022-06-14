@@ -11,6 +11,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+
 }
+
+
 rootProject.name = "Perfil_Investidor_tp3"
 include ':app'
